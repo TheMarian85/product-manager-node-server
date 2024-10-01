@@ -14,7 +14,6 @@ router.get('/:id',
 )
 
 router.post('/', 
-    param('id').isInt().withMessage('Invalid ID'),
      body('name').notEmpty().withMessage('Product name is required'),
      body('price')
                 .notEmpty().withMessage('Price is required')
